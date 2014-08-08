@@ -44,6 +44,50 @@
         ctx.lineTo(139, 20);
         ctx.closePath();
         ctx.fill();
+
+        //left hand part of 5
+        ctx.fillStyle = "#EBEBEB";
+        ctx.beginPath();
+        ctx.moveTo(139, 113);
+        ctx.lineTo(98, 113);
+        ctx.lineTo(96, 82);
+        ctx.lineTo(139, 82);
+        ctx.lineTo(139, 51);
+        ctx.lineTo(62, 51);
+        ctx.lineTo(70, 144);
+        ctx.lineTo(139, 144);
+        ctx.closePath();
+        ctx.fill();
+        ctx.beginPath();
+        ctx.moveTo(139, 193);
+        ctx.lineTo(105, 184);
+        ctx.lineTo(103, 159);
+        ctx.lineTo(72, 159);
+        ctx.lineTo(76, 207);
+        ctx.lineTo(139, 225);
+        ctx.closePath();
+        ctx.fill();
+
+        //right hand side of 5
+        ctx.fillStyle = '#FFFFFF';
+        ctx.beginPath();
+        ctx.moveTo(139, 113);
+        ctx.lineTo(139, 144);
+        ctx.lineTo(177, 144);
+        ctx.lineTo(173, 184);
+        ctx.lineTo(139, 193);
+        ctx.lineTo(139, 225);
+        ctx.lineTo(202, 207);
+        ctx.lineTo(210, 113);
+        ctx.closePath();
+        ctx.fill();
+        ctx.beginPath();
+        ctx.moveTo(139, 51);
+        ctx.lineTo(139, 82);
+        ctx.lineTo(213, 82);
+        ctx.lineTo(216, 51);
+        ctx.closePath();
+        ctx.fill();
     }
 
 
