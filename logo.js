@@ -2,16 +2,26 @@
 (function(doc){
     var ctx,
         fontFamily = "65px 'Gill Sans Ultra Bold', sans-serif",
+        slider,
         factorValue = 1;
 
     doc.addEventListener('DOMContentLoaded', function(){
         init();
-    })
+    });
 
     function init(){
         ctx = doc.getElementById('canvas').getContext('2d');
+        slider = doc.getElementById('slide');
         ctx.font = fontFamily;
         ctx.save();
+        drawLogo();
+        slider.oninput = function(){
+            changeScale(this.value)
+        }
+    }
+
+    function changeScale(val){
+        factorValue = val / 100;
         drawLogo();
     }
 
@@ -21,7 +31,7 @@
         ctx.save();
         ctx.clearRect(0, 0, 600, 400);
         ctx.scale(factorValue, factorValue);
-        ctx.fillText("HTML", 31, 60);
+        ctx.fillText("HTML", 51, 60);
         ctx.translate(0, offsetY);
 
         // 5 sided orange bg
